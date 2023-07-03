@@ -17,7 +17,7 @@
             <div class="slider-wrapper" tabindex="0" v-if="slides.length > 0">
 
                 <div class="item" v-for="(slide, index) in slides" :key="index" :class="{ active: index === activeIndex }">
-                    <img :src="slide.image" :alt="slide.title" />
+                    <img v-if="index === activeIndex" :src="slide.image" :alt="slide.title" />
                     <div class="text">
                         <h3>{{ slide.title }}</h3>
                         <p>
