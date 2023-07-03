@@ -1,1 +1,1 @@
-# vue-cdn-template
+# vue-slider
