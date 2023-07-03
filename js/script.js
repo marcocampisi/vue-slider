@@ -30,6 +30,15 @@ createApp({
         }
     },
     methods : {
+        prevSlide() {
+            this.activeIndex = (this.activeIndex - 1 + this.slides.length) % this.slides.length;
+        },
+        nextSlide() {
+            this.activeIndex = (this.activeIndex + 1) % this.slides.length;
+        },
+        goToSlide() {
+            this.activeIndex = index;
+        }
     }
 
 }).mount("#app");
