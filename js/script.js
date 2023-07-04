@@ -39,6 +39,11 @@ createApp({
         goToSlide(index) {
             this.activeIndex = index;
         }
+    },
+    mounted() {
+        setInterval(() => {
+            this.nextSlide();
+        }, 3000);
     }
 
 }).mount('#app');
